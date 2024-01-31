@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing Gear - Shoes</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 5;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ff0000; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .product-category {
+            padding: 20px;
+        }
+
+        .product {
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 30%; 
+            margin-right: 2%; 
+            position: relative;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buy-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ff0000; 
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #990000; 
+        }
+
+        footer {
+            background-color: #ff0000; 
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+       
+        h3 {
+            color: #ff0000;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .product h4 {
+            color: #fff;
+            margin-top: 10px;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #000; 
+            border-radius: 10px; 
+            padding: 5px 10px; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Top-Quality Boxing Shoes</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gloves.html">Gloves</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="clothing.html">Clothes</a></li>
+                <li><a href="headprotection.html">Headwear</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-category">
+       
+        <p>Step into the ring with confidence wearing our premium boxing shoes. Explore our collection designed for performance, comfort, and style.</p>
+        
+        <div class="product">
+            <img src="../Fotos/shoes1.jpg" alt="Boxing Shoe 1" width="250" height="125">
+            <p>Lightweight design for agile movements. Faster than ever. </p>
+            <p>Price: $89.99</p>
+            <button class="buy-button" onclick="buyProduct('Boxing Shoe 1')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/shoes2.jpg" alt="Boxing Shoe 2" width="250" height="125">
+            <p>Durable and breathable material for long-lasting comfort.</p>
+            <p>Price: $99.99</p>
+            <button class="buy-button" onclick="buyProduct('Boxing Shoe 2')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/shoes3.jpg" alt="Boxing Shoe 3" width="320" height="125">
+            <p>Ankle support for stability during intense workouts.</p>
+            <p>Price: $79.99</p>
+            <button class="buy-button" onclick="buyProduct('Boxing Shoe 3')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/shoes4.jpg" alt="Boxing Shoe 4" width="250" height="125">
+            <p>Traction outsole for superior grip in the ring.</p>
+            <p>Price: $109.99</p>
+            <button class="buy-button" onclick="buyProduct('Boxing Shoe 4')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/shoes5.jpg" alt="Boxing Shoe 5" width="250" height="125">
+            <p>Mesh panels for enhanced breathability. Very light for a lot of movement.</p>
+            <p>Price: $94.99</p>
+            <button class="buy-button" onclick="buyProduct('Boxing Shoe 5')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/shoes6.jpg" alt="Boxing Shoe 6" width="250" height="125">
+            <p>Secure lace-up closure for a customizable fit.</p>
+            <p>Price: $119.99</p>
+            <button class="buy-button" onclick="buyProduct('Boxing Shoe 6')">Buy</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Boxing Gear. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function buyProduct(productName) {
+            alert('Clicked Buy for ' + productName);
+        }
+    </script>
+</body>
+
+</html>

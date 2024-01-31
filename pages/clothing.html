@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing Gear - Clothing</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 5;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ff0000; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .product-category {
+            padding: 20px;
+        }
+
+        .product {
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 30%; 
+            margin-right: 2%; 
+            position: relative;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buy-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ff0000; 
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #990000; 
+        }
+
+        footer {
+            background-color: #ff0000; 
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h3 {
+            color: #ff0000;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .product h4 {
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #000; 
+            border-radius: 10px; 
+            padding: 5px 10px; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Top-Quality Boxing Clothing</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gloves.html">Gloves</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="clothing.html">Clothes</a></li>
+                <li><a href="headprotection.html">Headwear</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-category">
+        <h3>T-Shirts</h3>
+        <p>Stay comfortable and stylish with our collection of boxing T-shirts. Crafted for performance and designed to showcase your dedication to the sport.</p>
+        <div class="product">
+            <img src="../Fotos/shirt1.jpg" alt="T-Shirt 1" width="250" height="125">
+            <p>Classic design for a timeless boxing look.</p>
+            <p>Price: $19.99</p>
+            <button class="buy-button" onclick="buyProduct('T-Shirt 1')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/shirt2.jpg" alt="T-Shirt 2" width="250" height="125">
+            <p>Breathable fabric to keep you cool during workouts.</p>
+            <p>Price: $24.99</p>
+            <button class="buy-button" onclick="buyProduct('T-Shirt 2')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/shirt3.jpg" alt="T-Shirt 3" width="205" height="125">
+            <p>Graphic print for a bold and distinctive style.</p>
+            <p>Price: $29.99</p>
+            <button class="buy-button" onclick="buyProduct('T-Shirt 3')">Buy</button>
+        </div>
+
+        <h3>Shorts</h3>
+        <p>Experience freedom of movement with our boxing shorts. Designed for comfort and performance, these shorts are ideal for intense training sessions.</p>
+        <div class="product">
+            <img src="../Fotos/Short1.jpg" alt="Shorts 1" width="250" height="125">
+            <p>Elastic waistband for a secure and comfortable fit.</p>
+            <p>Price: $34.99</p>
+            <button class="buy-button" onclick="buyProduct('Shorts 1')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/Short2.jpg" alt="Shorts 2" width="250" height="125">
+            <p>Moisture-wicking fabric to keep you dry during intense workouts.</p>
+            <p>Price: $39.99</p>
+            <button class="buy-button" onclick="buyProduct('Shorts 2')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/Short3.jpg" alt="Shorts 3" width="250" height="125">
+            <p>Mesh panels for enhanced breathability and ventilation.</p>
+            <p>Price: $29.99</p>
+            <button class="buy-button" onclick="buyProduct('Shorts 3')">Buy</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Boxing Gear. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function buyProduct(productName) {
+            alert('Clicked Buy for ' + productName);
+        }
+    </script>
+</body>
+
+</html>

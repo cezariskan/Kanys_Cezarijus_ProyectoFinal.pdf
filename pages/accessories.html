@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing Gear - Accessories</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 5;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ff0000; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .product-category {
+            padding: 20px;
+        }
+
+        .product {
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 30%; 
+            margin-right: 2%; 
+            position: relative;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buy-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ff0000; 
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #990000; 
+        }
+
+        footer {
+            background-color: #ff0000; 
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h3 {
+            color: #ff0000;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .product h4 {
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #000; 
+            border-radius: 10px; 
+            padding: 5px 10px; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Top-Quality Boxing Accessories</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gloves.html">Gloves</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="clothing.html">Clothes</a></li>
+                <li><a href="headprotection.html">Headwear</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-category">
+        <h3>Bandages</h3>
+        <p>Wrap your hands with precision and care using our top-quality bandages. Designed for comfort and support, these bandages will enhance your training experience.</p>
+        <div class="product">
+            <img src="../Fotos/Band1.jpg" alt="Bandage 1" width="250" height="125">
+            <p>Comfortable and breathable bandages for effective hand protection.</p>
+            <p>Price: $14.99</p>
+            <button class="buy-button" onclick="buyProduct('Bandage 1')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/Band2.jpg" alt="Bandage 2" width="250" height="125">
+            <p>Elastic and durable material providing reliable hand support.</p>
+            <p>Price: $19.99</p>
+            <button class="buy-button" onclick="buyProduct('Bandage 2')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/band3.jpg" alt="Bandage 3" width="250" height="125">
+            <p>Easy-to-use bandages with secure fastening for a customized fit.</p>
+            <p>Price: $12.99</p>
+            <button class="buy-button" onclick="buyProduct('Bandage 3')">Buy</button>
+        </div>
+
+        <h3>Mouthguards</h3>
+        <p>Ensure your safety with our high-quality mouthguards. Specially designed for optimal protection, these mouthguards are a must-have for any serious boxer.</p>
+        <div class="product">
+            <img src="../Fotos/Mouth1.jpg" alt="Mouthguard 1" width="250" height="125">
+            <p>Custom-fit mouthguard for maximum comfort and protection.</p>
+            <p>Price: $24.99</p>
+            <button class="buy-button" onclick="buyProduct('Mouthguard 1')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/Mouth2.jpg" alt="Mouthguard 2" width="250" height="125">
+            <p>Shock-absorbing technology for impact resistance during intense training.</p>
+            <p>Price: $29.99</p>
+            <button class="buy-button" onclick="buyProduct('Mouthguard 2')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/Mouth3.jpg" alt="Mouthguard 3" width="250" height="125">
+            <p>Ventilated design for enhanced breathability and comfort.</p>
+            <p>Price: $21.99</p>
+            <button class="buy-button" onclick="buyProduct('Mouthguard 3')">Buy</button>
+        </div>
+
+        <h3>Gloves Pads</h3>
+        <p>Maximize your training impact with our gloves pads. Crafted for durability and performance, these pads are perfect for honing your skills.</p>
+        <div class="product">
+            <img src="../Fotos/pads1.jpg" alt="Gloves Pad 1" width="250" height="125">
+            <p>High-density padding for effective impact absorption.</p>
+            <p>Price: $34.99</p>
+            <button class="buy-button" onclick="buyProduct('Gloves Pad 1')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/pads2.jpg" alt="Gloves Pad 2" width="250" height="125">
+            <p>Durable and resilient gloves pads for intense training sessions.</p>
+            <p>Price: $39.99</p>
+            <button class="buy-button" onclick="buyProduct('Gloves Pad 2')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/pads3.jpg" alt="Gloves Pad 3" width="250" height="125">
+            <p>Adjustable straps for a secure fit and optimal performance.</p>
+            <p>Price: $31.99</p>
+            <button class="buy-button" onclick="buyProduct('Gloves Pad 3')">Buy</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Boxing Gear. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function buyProduct(productName) {
+            alert('Clicked Buy for ' + productName);
+        }
+    </script>
+</body>
+
+</html>

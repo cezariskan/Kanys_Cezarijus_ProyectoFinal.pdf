@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing Gear - Headwear</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 5;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ff0000; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .product-category {
+            padding: 20px;
+        }
+
+        .product {
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 30%; 
+            margin-right: 2%; 
+            position: relative;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buy-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ff0000; 
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #990000; 
+        }
+
+        footer {
+            background-color: #ff0000; 
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+       
+        h3 {
+            color: #ff0000;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .product h4 {
+            color: #fff;
+            margin-top: 10px;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #000; 
+            border-radius: 10px; 
+            padding: 5px 10px; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Top-Quality Boxing Headwear</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gloves.html">Gloves</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="clothing.html">Clothes</a></li>
+                <li><a href="headprotection.html">Headwear</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-category">
+       
+        <p>Elevate your style and protect yourself with our high-quality boxing headwear. Explore our collection of headwear designed for both comfort and performance.</p>
+        
+        <div class="product">
+            <img src="../Fotos/head1.jpg" alt="Headwear 1" width="250" height="125">
+            <p>Classic design for a timeless boxing look.</p>
+            <p>Price: $24.99</p>
+            <button class="buy-button" onclick="buyProduct('Headwear 1')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/head2.jpg" alt="Headwear 2" width="250" height="125">
+            <p>Breathable fabric to keep you cool during workouts.</p>
+            <p>Price: $29.99</p>
+            <button class="buy-button" onclick="buyProduct('Headwear 2')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/head3.jpg" alt="Headwear 3" width="250" height="125">
+            <p>Graphic print for a bold and distinctive style.</p>
+            <p>Price: $34.99</p>
+            <button class="buy-button" onclick="buyProduct('Headwear 3')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/head4.jpg" alt="Headwear 4" width="250" height="125">
+            <p>Comfortable and adjustable fit for all head sizes.</p>
+            <p>Price: $27.99</p>
+            <button class="buy-button" onclick="buyProduct('Headwear 4')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/head5.jpg" alt="Headwear 5" width="230" height="125">
+            <p>Moisture-wicking technology to keep you dry.</p>
+            <p>Price: $32.99</p>
+            <button class="buy-button" onclick="buyProduct('Headwear 5')">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="../Fotos/head6.jpg" alt="Headwear 6" width="250" height="125">
+            <p>Unique and stylish design for a standout look.</p>
+            <p>Price: $39.99</p>
+            <button class="buy-button" onclick="buyProduct('Headwear 6')">Buy</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Boxing Gear. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function buyProduct(productName) {
+            alert('Clicked Buy for ' + productName);
+        }
+    </script>
+</body>
+
+</html>
